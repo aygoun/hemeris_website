@@ -38,8 +38,6 @@ const Testimonial = ({
     bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
-
   const sectionHeader = {
     title: "Notre Équipe",
     paragraph:
@@ -87,12 +85,14 @@ const Testimonial = ({
                     <a
                       href="https://linkedin.com/in/flore-vandier-a116391a4"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src={require("../../../src/assets/images/linkedinLogo.png")}
                         height={25}
                         width={25}
                         style={{ borderRadius: 2, margin: "auto" }}
+                        alt="linkedin"
                       />
                     </a>
                   </div>
@@ -102,7 +102,7 @@ const Testimonial = ({
                   <div>
                     <img
                       src={require("../../../src/assets/images/stevenPicture.jpeg")}
-                      alt="Flore Vandier"
+                      alt="Steven"
                       width={200}
                       height={200}
                       style={{ borderRadius: "50%", margin: "auto" }}
@@ -124,12 +124,14 @@ const Testimonial = ({
                     <a
                       href="https://linkedin.com/in/steven-deves-girain"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src={require("../../../src/assets/images/linkedinLogo.png")}
                         height={25}
                         width={25}
                         style={{ borderRadius: 2, margin: "auto" }}
+                        alt="linkedin"
                       />
                     </a>
                   </div>
@@ -158,7 +160,7 @@ const Testimonial = ({
                 src={require("../../../src/assets/images/geeps-logo.png")}
                 width={250}
                 height={130}
-                alt=""
+                alt="partenaire"
               />
             </div>
             <div className="partenairesItem">
@@ -166,7 +168,7 @@ const Testimonial = ({
                 src={require("../../../src/assets/images/geeps-logo.png")}
                 width={250}
                 height={130}
-                alt=""
+                alt="partenaire"
               />
             </div>
             <div className="partenairesItem">
@@ -185,7 +187,7 @@ const Testimonial = ({
                 src={require("../../../src/assets/images/geeps-logo.png")}
                 width={250}
                 height={130}
-                alt=""
+                alt="partenaire"
               />
             </div>
             <div className="partenairesItem">
@@ -193,7 +195,7 @@ const Testimonial = ({
                 src={require("../../../src/assets/images/geeps-logo.png")}
                 width={250}
                 height={130}
-                alt=""
+                alt="partenaire"
               />
             </div>
             <div className="partenairesItem">
@@ -201,7 +203,7 @@ const Testimonial = ({
                 src={require("../../../src/assets/images/geeps-logo.png")}
                 width={250}
                 height={130}
-                alt=""
+                alt="partenaire"
               />
             </div>
           </div>

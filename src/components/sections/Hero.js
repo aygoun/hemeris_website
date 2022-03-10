@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
 
 const propTypes = {
   ...SectionProps.types
@@ -24,32 +23,32 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-
+  /*
   const [videoModalActive, setVideomodalactive] = useState(false);
-
+  // eslint-disable-next-line
   const openModal = (e) => {
     e.preventDefault();
     setVideomodalactive(true);
-  }
-
+  };
+  // eslint-disable-next-line
   const closeModal = (e) => {
     e.preventDefault();
     setVideomodalactive(false);
-  }   
+  };*/
 
   const outerClasses = classNames(
-    'hero section center-content',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "hero section center-content",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'hero-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "hero-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   return (
@@ -61,7 +60,10 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              👋 de la part de l'équipe{" "}
+              <span role="img" aria-label="">
+                👋
+              </span>{" "}
+              de la part de l'équipe{" "}
               <span className="text-color-primary">Hemeris</span>
             </h1>
             <div className="container-xs">
@@ -74,12 +76,7 @@ const Hero = ({
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    wideMobile
-                    href="#project"
-                  >
+                  <Button tag="a" color="primary" wideMobile href="#project">
                     Voir le projet
                   </Button>
                 </ButtonGroup>
