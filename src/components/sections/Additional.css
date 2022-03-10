@@ -1,0 +1,13 @@
+.partenairesContainer{
+    width: 90%!important;
+    margin: auto;
+    display: flex;
+}
+.partenairesItem{
+    width: 250px!important;
+    flex: 33.33%;
+    padding: 10px;
+}
+.myLinkMail:hover{
+    text-decoration: underline;
+}
