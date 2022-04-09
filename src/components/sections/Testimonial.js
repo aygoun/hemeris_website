@@ -58,8 +58,8 @@ const Testimonial = ({
             <SectionHeader data={sectionHeader} className="center-content" />
             <div>
               {/*className={tilesClasses}*/}
-              <div data-reveal-delay="200">
-                <div>
+              <div data-reveal-delay="200" style={{display: "flex", justifyContent: "center"}}>
+                <div style={{ width: 250 }}>
                   <div>
                     <img
                       src={require("../../../src/assets/images/florePicture.jpeg")}
@@ -98,7 +98,7 @@ const Testimonial = ({
                   </div>
                 </div>
 
-                <div style={{ marginTop: "2em" }}>
+                <div style={{ width: 250 }}>
                   <div>
                     <img
                       src={require("../../../src/assets/images/stevenPicture.jpeg")}

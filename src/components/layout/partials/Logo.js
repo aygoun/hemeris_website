@@ -20,8 +20,8 @@ const Logo = ({
           <Image
             src={require("./../../../assets/images/HemerisText.png")}
             alt="Open"
-            width={150}
-            height={50}
+            width={190}
+            height={80}
           />
         </Link>
       </h1>
